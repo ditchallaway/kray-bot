@@ -4065,6 +4065,9 @@ img {
   -ms-flex-pack: center;
   justify-content: center;
   background-image: url("https://uploads-ssl.webflow.com/61df40e8ff2202021755e0c9/62271fbf4452c6e83d37f1f3_tiger.svg");
+  background-size: contain;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .bottle-card._3 {
@@ -4088,11 +4091,11 @@ img {
   display: flex;
   width: 100%;
   padding: 9vw 1.6vw 1.6vw;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -4101,6 +4104,10 @@ img {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
   border-radius: 8%;
   color: #fff;
   background-clip: padding-box;
@@ -4767,6 +4774,24 @@ img {
   background-repeat: no-repeat;
 }
 
+.call-to-action {
+  position: relative;
+  z-index: 1;
+  padding: 60px;
+}
+
+.centered-container {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+}
+
+.button {
+  background-color: #fb4b4d;
+}
+
 @media screen and (max-width: 991px) {
   .nav-link {
     margin-right: 0px;
@@ -5100,6 +5125,10 @@ img {
   .front {
     background-color: #cdfd3b;
   }
+
+  .call-to-action {
+    padding: 40px 20px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -5232,6 +5261,10 @@ img {
   .dropdown-link-mobile {
     padding-top: 12px;
     padding-bottom: 12px;
+  }
+
+  .centered-container {
+    text-align: left;
   }
 }
 
