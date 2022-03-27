@@ -3813,19 +3813,20 @@ img {
   min-height: 75%;
   min-width: 50%;
   padding: 0vw;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   border-style: dashed;
   border-width: 10px;
-  border-radius: 14%;
+  border-radius: 50px;
   background-image: url("https://uploads-ssl.webflow.com/61df40e8ff2202021755e0c9/61df40e8ff2202325455e0f3_svgexport-19.svg"),
     -webkit-gradient(linear, left top, left bottom, from(#cdfd3b), to(#cdfd3b));
   background-image: url("https://uploads-ssl.webflow.com/61df40e8ff2202021755e0c9/61df40e8ff2202325455e0f3_svgexport-19.svg"),
     linear-gradient(180deg, #cdfd3b, #cdfd3b);
   background-position: 50% 100%, 0px 0px;
-  background-size: auto, auto;
+  background-size: contain, auto;
+  background-repeat: repeat-x, repeat;
   -o-object-fit: contain;
   object-fit: contain;
 }
@@ -4648,6 +4649,8 @@ img {
 
 .back {
   padding: 20px;
+  border: 5px dashed #000;
+  border-radius: 20px;
   background-color: #cdfd3b;
   color: #fffcf7;
 }
@@ -4657,11 +4660,14 @@ img {
 }
 
 .back.behind {
+  border-radius: 20px;
   background-color: #fb4b4d;
 }
 
 .front {
   padding: 16px;
+  border: 5px dashed #000;
+  border-radius: 20px;
   background-color: #fb4b4d;
 }
 
@@ -4746,12 +4752,18 @@ img {
   display: block;
   overflow: visible;
   max-height: none;
-  max-width: 10em;
+  max-width: 33%;
+  min-width: auto;
   margin-top: 40px;
   margin-bottom: 40px;
+  padding: 20px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   mix-blend-mode: normal;
-  -o-object-fit: scale-down;
-  object-fit: scale-down;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .signage {
@@ -4766,12 +4778,12 @@ img {
   -ms-flex-pack: center;
   justify-content: center;
   border: 10px dashed #000;
-  border-radius: 20px;
+  border-radius: 50px;
   background-color: #8b84f6;
   background-image: url("https://uploads-ssl.webflow.com/61df40e8ff2202021755e0c9/61df40e8ff220248f255e0f9_radium-green.svg");
   background-position: 50% 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: repeat-x;
 }
 
 .call-to-action {
@@ -4790,6 +4802,64 @@ img {
 
 .button {
   background-color: #fb4b4d;
+}
+
+.mega {
+  font-size: 0vw;
+}
+
+.paragraph {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 2vw;
+}
+
+.heading {
+  position: static;
+  text-decoration: none;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+.paragraph-2 {
+  color: #cdfd3b;
+}
+
+.tagline {
+  color: #fff;
+  font-size: 2vw;
+}
+
+.skillstory-wht {
+  color: #cdfd3b;
+}
+
+.peeps-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.title-bigass {
+  color: #000;
+}
+
+.horn {
+  font-size: 5em;
 }
 
 @media screen and (max-width: 991px) {
@@ -4835,8 +4905,14 @@ img {
     display: flex;
   }
 
+  .bottle-card._1 {
+    background-position: 50% 0%;
+    background-size: cover;
+  }
+
   .bottle-card._2 {
     display: block;
+    background-size: cover;
   }
 
   .text-eyebrow {
@@ -4870,7 +4946,7 @@ img {
   }
 
   .title-small {
-    font-size: 3vw;
+    font-size: 2vw;
   }
 
   .souce-story {
@@ -4939,10 +5015,56 @@ img {
     display: none;
   }
 
+  .back {
+    border: 5px dashed #000;
+    border-radius: 17px;
+  }
+
+  .back.behind {
+    border: 5px dashed #000;
+    border-radius: 19px;
+  }
+
   .front {
     border: 5px dashed #000;
     border-radius: 13px;
     background-color: #8b84f6;
+  }
+
+  .dude {
+    position: relative;
+  }
+
+  .signage {
+    mix-blend-mode: normal;
+  }
+
+  .mega {
+    font-size: 3vw;
+  }
+
+  .paragraph {
+    color: #000;
+    mix-blend-mode: normal;
+  }
+
+  .tagline {
+    color: #000;
+  }
+
+  .overlay {
+    position: absolute;
+    left: 0%;
+    top: auto;
+    right: auto;
+    bottom: 0%;
+    width: 100%;
+    height: 100px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    mix-blend-mode: normal;
+    -o-object-fit: contain;
+    object-fit: contain;
   }
 }
 
