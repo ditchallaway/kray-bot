@@ -1922,6 +1922,12 @@ textarea.w-select {
 .w-condition-invisible {
   display: none !important;
 }
+.wf-layout-layout {
+  display: grid !important;
+}
+.wf-layout-cell {
+  display: flex !important;
+}
 
 /* ==========================================================================
    Start of custom Webflow CSS
@@ -3813,10 +3819,10 @@ img {
   min-height: 75%;
   min-width: 50%;
   padding: 0vw;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   border-style: dashed;
   border-width: 10px;
   border-radius: 50px;
@@ -4238,6 +4244,9 @@ img {
   height: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding: 10px;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .story-para {
