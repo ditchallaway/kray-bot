@@ -1101,6 +1101,13 @@ textarea.w-select {
   display: none !important;
   -webkit-appearance: none;
 }
+.w-background-video--control {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  background-color: transparent;
+  padding: 0;
+}
 .w-slider {
   position: relative;
   height: 300px;
@@ -4714,10 +4721,10 @@ img {
 }
 
 .form-block {
-  background-image: url("https://uploads-ssl.webflow.com/61df40e8ff2202021755e0c9/61df40e8ff2202bc0e55e0f5_svgexport-16.svg");
+  background-image: url("https://uploads-ssl.webflow.com/61df40e8ff2202021755e0c9/6254db48edd4cc3cda1686a1_Asset%208.svg");
   background-position: 50% 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: auto;
+  background-repeat: repeat-x;
 }
 
 .text-field {
@@ -4869,6 +4876,17 @@ img {
 
 .horn {
   font-size: 5em;
+}
+
+.text-block-62 {
+  font-size: 11vw;
+}
+
+.text-block-63 {
+  position: absolute;
+  font-family: Oswald, sans-serif;
+  color: #fb4b4d;
+  font-size: 5rem;
 }
 
 @media screen and (max-width: 991px) {
