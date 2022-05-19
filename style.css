@@ -3828,9 +3828,9 @@ img {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  min-height: 75%;
-  min-width: 50%;
-  margin: 20px 20px 0px;
+  min-height: 50vh;
+  min-width: 75vw;
+  margin: 20px 20px 100px;
   padding: 0vw;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -3839,13 +3839,14 @@ img {
   border-style: dashed;
   border-width: 10px;
   border-radius: 50px;
-  background-image: url("https://uploads-ssl.webflow.com/61df40e8ff2202021755e0c9/61df40e8ff2202325455e0f3_svgexport-19.svg"),
-    -webkit-gradient(linear, left top, left bottom, from(#cdfd3b), to(#cdfd3b));
-  background-image: url("https://uploads-ssl.webflow.com/61df40e8ff2202021755e0c9/61df40e8ff2202325455e0f3_svgexport-19.svg"),
-    linear-gradient(180deg, #cdfd3b, #cdfd3b);
-  background-position: 50% 100%, 0px 0px;
-  background-size: contain, auto;
-  background-repeat: repeat-x, repeat;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#cdfd3b),
+    to(#cdfd3b)
+  );
+  background-image: linear-gradient(180deg, #cdfd3b, #cdfd3b);
   -o-object-fit: contain;
   object-fit: contain;
 }
@@ -4053,10 +4054,9 @@ img {
 }
 
 .title-large {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0px 140px;
   color: #fb4b4d;
-  font-size: 3vw;
+  font-size: 5vw;
   line-height: 1.12;
 }
 
@@ -4185,6 +4185,7 @@ img {
   display: block;
   margin-top: 0px;
   margin-bottom: 0px;
+  font-size: 4vw;
 }
 
 .bottle-icon {
@@ -4938,6 +4939,11 @@ img {
 
 .field-label-2 {
   font-size: 2vw;
+}
+
+.paragraph-3 {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 991px) {
