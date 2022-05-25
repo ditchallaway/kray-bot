@@ -3790,7 +3790,8 @@ img {
 
 .contain {
   position: relative;
-  padding: 1.4vw;
+  overflow: hidden;
+  padding: 0vw;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -3828,27 +3829,31 @@ img {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  min-height: 50vh;
-  min-width: 75vw;
+  width: auto;
+  min-height: 100%;
   margin: 20px 20px 100px;
   padding: 0vw;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border-style: dashed;
-  border-width: 10px;
+  border-width: 15px;
   border-radius: 50px;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#cdfd3b),
-    to(#cdfd3b)
-  );
-  background-image: linear-gradient(180deg, #cdfd3b, #cdfd3b);
+  background-color: #8b84f6;
+  background-clip: border-box;
+  -webkit-text-fill-color: inherit;
   -o-object-fit: contain;
   object-fit: contain;
+}
+
+.contain.is--border.only-left.vid {
+  background-color: #fff;
 }
 
 .contain.is--story-tl {
@@ -4186,6 +4191,7 @@ img {
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 4vw;
+  mix-blend-mode: normal;
 }
 
 .bottle-icon {
@@ -4266,7 +4272,7 @@ img {
 .souce-story {
   display: -ms-grid;
   display: grid;
-  width: 97vw;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   grid-auto-columns: 1fr;
@@ -4312,7 +4318,14 @@ img {
 
 .full-width {
   display: block;
+  overflow: hidden;
   width: 100%;
+  margin-top: 20px;
+  padding-bottom: 0px;
+  border: 0px none #000;
+  mix-blend-mode: normal;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .marquee-link {
@@ -4696,10 +4709,16 @@ img {
 .noise-text {
   position: absolute;
   left: 0%;
-  top: 100px;
+  top: auto;
   right: 0%;
   bottom: 0%;
-  min-width: 90%;
+  min-width: 100%;
+  margin-bottom: 10%;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  mix-blend-mode: color-burn;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .back {
@@ -4944,6 +4963,28 @@ img {
 .paragraph-3 {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.astro {
+  max-width: 75%;
+  margin-right: -4px;
+  margin-left: 0px;
+  padding: 20px;
+}
+
+.video-frame {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.heading-2 {
+  font-size: 4rem;
 }
 
 @media screen and (max-width: 991px) {
