@@ -4747,6 +4747,7 @@ img {
 
 .field-label {
   display: block;
+  font-family: "Neue machina", sans-serif;
   font-size: 2vw;
 }
 
@@ -4985,6 +4986,10 @@ img {
 
 .heading-2 {
   font-size: 4rem;
+}
+
+.field-label-3 {
+  color: #8b84f6;
 }
 
 @media screen and (max-width: 991px) {
