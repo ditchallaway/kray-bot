@@ -3843,11 +3843,26 @@ img {
   -ms-flex-pack: center;
   justify-content: center;
   border-style: dashed;
-  border-width: 15px;
+  border-width: 10px;
   border-radius: 50px;
   background-color: #8b84f6;
-  background-clip: border-box;
+  background-image: url("https://uploads-ssl.webflow.com/61df40e8ff2202021755e0c9/628d79177acd2d39547ce207_Asset%206.svg"),
+    radial-gradient(
+      circle farthest-corner at 0% 100%,
+      #8b84f6,
+      #fb4b4d 44%,
+      #cdfd3b
+    );
+  background-position: 50% 50%, 0px 0px;
+  background-size: 85%, auto;
+  background-repeat: no-repeat, repeat;
+  outline-color: #000;
+  outline-offset: 0px;
+  outline-style: dotted;
+  outline-width: 8px;
+  background-clip: padding-box;
   -webkit-text-fill-color: inherit;
+  mix-blend-mode: normal;
   -o-object-fit: contain;
   object-fit: contain;
 }
@@ -4627,7 +4642,19 @@ img {
 
 .image {
   overflow: visible;
-  opacity: 0.6;
+  background-color: #000;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#000),
+    to(#000)
+  );
+  background-image: linear-gradient(180deg, #000, #000);
+  opacity: 1;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   -o-object-fit: fill;
   object-fit: fill;
 }
@@ -4863,6 +4890,12 @@ img {
   background-position: 50% 50%;
   background-size: 100%;
   background-repeat: no-repeat;
+  outline-color: #000;
+  outline-offset: 0px;
+  outline-style: dotted;
+  outline-width: 8px;
+  background-clip: padding-box;
+  -webkit-text-fill-color: inherit;
 }
 
 .call-to-action {
