@@ -478,8 +478,8 @@ fieldset {
   border: 0;
 }
 button,
-html input[type="button"],
-input[type="reset"] {
+[type="button"],
+[type="reset"] {
   border: 0;
   cursor: pointer;
   -webkit-appearance: button;
@@ -547,6 +547,13 @@ label {
 fieldset[disabled] .w-input,
 fieldset[disabled] .w-select {
   cursor: not-allowed;
+}
+.w-input[disabled]:not(.w-input-disabled),
+.w-select[disabled]:not(.w-input-disabled),
+.w-input[readonly],
+.w-select[readonly],
+fieldset[disabled]:not(.w-input-disabled) .w-input,
+fieldset[disabled]:not(.w-input-disabled) .w-select {
   background-color: #eeeeee;
 }
 textarea.w-input,
@@ -3729,7 +3736,7 @@ img {
   -webkit-justify-content: stretch;
   -ms-flex-pack: stretch;
   justify-content: stretch;
-  justify-items: stretch;
+  justify-items: start;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -3741,8 +3748,8 @@ img {
   grid-auto-columns: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 16px;
-  -ms-grid-columns: 2fr 1fr 2fr;
-  grid-template-columns: 2fr 1fr 2fr;
+  -ms-grid-columns: 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 2fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }
@@ -3776,7 +3783,7 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-width: 50%;
+  min-width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -3876,7 +3883,7 @@ img {
       #fb4b4d 44%,
       #cdfd3b
     );
-  background-position: 50% 50%, 0px 0px;
+  background-position: 50% 15%, 0px 0px;
   background-size: 85%, auto;
   background-repeat: no-repeat, repeat;
   outline-color: #000;
@@ -5079,6 +5086,13 @@ img {
   min-width: 40%;
 }
 
+.bold-emo {
+  background-color: #fff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media screen and (max-width: 991px) {
   .nav-link {
     margin-right: 0px;
@@ -6002,6 +6016,14 @@ img {
 #w-node-f2ca2d4e-0411-911a-e83c-c20dc5c7526c-b17af5c6 {
   -ms-grid-column-align: auto;
   justify-self: auto;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
 }
 
 #w-node-f2ca2d4e-0411-911a-e83c-c20dc5c75272-b17af5c6 {
