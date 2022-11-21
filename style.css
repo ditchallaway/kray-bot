@@ -1942,9 +1942,6 @@ textarea.w-select {
 .wf-layout-layout {
   display: grid !important;
 }
-.wf-layout-cell {
-  display: flex !important;
-}
 
 /* ==========================================================================
    Start of custom Webflow CSS
@@ -5407,10 +5404,7 @@ strong {
   right: 0%;
   bottom: 0%;
   z-index: 999995;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   width: 100%;
   height: 80vh;
   min-height: 80vh;
