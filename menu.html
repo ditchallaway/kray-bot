@@ -35,7 +35,7 @@
       };
     </script>
   </head>
-  <body>
+  <body class="body">
     <div class="w-embed w-iframe w-script">
       <!-- Google tag (gtag.js) -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-KF9DXG9T34"></script>
@@ -139,8 +139,8 @@
       </script>
 
       <script>
-        window.addEventListener(fetch, (event) => {
-          if (event.origin !== "https://squareup.com/*") return;
+        window.addEventListener(click, (event) => {
+          if (event.origin !== "https://squareup.com/") return;
           console.log(event);
           //  event.source.postMessage("hi there yourself!  the secret response " +
           //                          "is: rheeeeet!",
