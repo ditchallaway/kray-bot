@@ -130,9 +130,7 @@
         window.addEventListener(click, (event) => {
           if (event.origin !== "https://squareup.com/") return;
           console.log(event);
-          //  event.source.postMessage("hi there yourself!  the secret response " +
-          //                          "is: rheeeeet!",
-          //                        event.origin);
+          event.source.postMessage("hi there yourself!  the secret response " + "is: rheeeeet!", event.origin);
         });
       </script>
     </div>

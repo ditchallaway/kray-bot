@@ -5218,8 +5218,9 @@ strong {
 }
 
 .rich-text-block.paragraph h2 {
-  font-family: "Neue machina", sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #000;
+  font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -5234,7 +5235,7 @@ strong {
   padding-right: 5px;
   padding-left: 5px;
   border-radius: 5px;
-  background-color: #8b84f6;
+  background-color: #959595;
   color: #cdfd3b;
   font-size: 0.75em;
   line-height: 2rem;
