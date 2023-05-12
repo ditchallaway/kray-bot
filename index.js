@@ -45,7 +45,7 @@ async function init () {
 
   if (config.pages) {
     const ignorePage = picomatch(config.pages.ignore || [])
-    config.pages: = {
+    config.pages = {
       valid: page => !ignorePage(page)
     }
   }
