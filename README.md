@@ -1,2 +1,4 @@
-# kray-bot
-Call me if you need a fix, call me if you need a boost See them other chicken heads? They don't never leave the coop
+# Webflow Get
+> GitHub action to fetch Webflow site content.
+
+See [webflow-git](https://github.com/loomchild/webflow-git) for more info.
