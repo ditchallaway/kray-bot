@@ -40,7 +40,7 @@ async function init () {
     pages: true
   }
 
-  const configFile = await readFile('flowgit.yml')
+  const configFile = await readFile('webflowgit.yml')
   Object.assign(config, YAML.parse(configFile))
 
   if (config.pages) {
